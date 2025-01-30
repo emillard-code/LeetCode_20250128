@@ -24,6 +24,9 @@ public class LeetCodeAttempt {
 
             for (int j = 0; j < grid[0].length; j++) {
 
+                // int fish indicates the maximum number of fish obtained if we start at this index.
+                // For each index we compare it with int maximumFish and if int fish is higher,
+                // we update the value of int maximumFish to reflect this.
                 int fish = travelGrid(grid, i, j);
                 if (fish > maximumFish) { maximumFish = fish; }
 
